@@ -54,25 +54,17 @@ body{
     font-size: 30px;
 }
 
-@keyframes slideIn{
-    to{
-        transform:translateX(0);
-        opacity:1;
-    }
-}
 
 #nkar {
   opacity: 0.5;
   width: 500px;
   height: 500px;
   border-radius: 20px;
-  transform: translateX(100vw) rotate(-360deg);
-  transition: opacity 2s, transform 1.5s ease-out;
 }
 
 .scroll-section.visible #nkar {
   opacity: 1;
-  transform: translateX(0) rotate(0);
+  transform: none;
 }
 
 .text{
@@ -134,11 +126,6 @@ span1 {
     border-radius: 50%;
     border: 4px solid #fff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    transition: opacity 2s;
-    transform: translateX(100vw) ;
-    animation: slideIn 1.5s ease-out forwards;
-    animation-delay: 0.5s;
-    align-content: flex-start;
 }
 
 .info {
@@ -146,11 +133,6 @@ span1 {
     font-optical-sizing: auto;
     font-weight: 350;
     font-style: normal;
-    transition: opacity 2s;
-    transform: translateX(100vw);
-    animation: slideIn 1.5s ease-out forwards;
-    animation-delay: 0.5s;
-    align-content: flex-start;
     width: 400px;
     height: 200px;
     flex-flow: column;
@@ -167,11 +149,6 @@ span1 {
     font-optical-sizing: auto;
     font-weight: 350;
     font-style: normal;
-    transition: opacity 2s;
-    transform: translateX(-100vw);
-    animation: slideIn 1.5s ease-out forwards;
-    animation-delay: 0.5s;
-    align-content: flex-start;
     width: 400px;
     height: 150px;
     flex-flow: column;
@@ -189,11 +166,6 @@ span1 {
     font-optical-sizing: auto;
     font-weight: 350;
     font-style: normal;
-    transition: opacity 2s;
-    transform: translateX(100vw);
-    animation: slideIn 1.5s ease-out forwards;
-    animation-delay: 0.5s;
-    align-content: flex-start;
     width: 400px;
     height: 150px;
     flex-flow: column;
@@ -219,6 +191,7 @@ span1 {
     height:50px;
     tab-size:15px;
     cursor:pointer;
+    margin: 1rem;
 }
 
 #button a{
@@ -232,6 +205,10 @@ span1 {
 
 #info2{
     font-size:30px;
+}
+
+.parent {
+  margin: 3rem 0;
 }
 
 #guyn{

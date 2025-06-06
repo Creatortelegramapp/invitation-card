@@ -13,6 +13,7 @@ document.querySelectorAll('.scroll-section').forEach(section => {
     observer.observe(section);
 });
 
+
 const countdown = () => {
     const targetDate = new Date("2025-06-27T00:00:00").getTime();
     const now = new Date().getTime();
